@@ -181,7 +181,7 @@ script = ExtResource("1_tofbx")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_4hsm7")
 animation = &"walkdown"
-frame_progress = 0.255567
+frame_progress = 0.162166
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_ne5vb")
