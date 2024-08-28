@@ -92,7 +92,7 @@ animations = [{
 "duration": 0.5,
 "texture": SubResource("AtlasTexture_ok0fh")
 }, {
-"duration": 1.0,
+"duration": 0.8,
 "texture": SubResource("AtlasTexture_gw5r8")
 }, {
 "duration": 0.5,
@@ -180,8 +180,9 @@ script = ExtResource("1_tofbx")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_4hsm7")
-animation = &"walkdown"
-frame_progress = 0.162166
+animation = &"walkleft"
+frame_progress = 0.803085
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 shape = SubResource("RectangleShape2D_ne5vb")
