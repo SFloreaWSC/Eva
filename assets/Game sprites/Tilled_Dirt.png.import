@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b1oagw5sqsxnt"
-path="res://.godot/imported/ETC.png-657e2b4ca661590d40ee2be1ee3cbe7a.ctex"
+uid="uid://h4u2ye0dmmqk"
+path="res://.godot/imported/Tilled_Dirt.png-ad5da2e280871a7267f102ef6cf6f374.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ETC.png"
-dest_files=["res://.godot/imported/ETC.png-657e2b4ca661590d40ee2be1ee3cbe7a.ctex"]
+source_file="res://assets/Game sprites/Tilled_Dirt.png"
+dest_files=["res://.godot/imported/Tilled_Dirt.png-ad5da2e280871a7267f102ef6cf6f374.ctex"]
 
 [params]
 
