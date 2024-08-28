@@ -1,24 +1,39 @@
-[gd_scene load_steps=4 format=3 uid="uid://ctdyjoctmoqqf"]
+[gd_scene load_steps=5 format=3 uid="uid://ctdyjoctmoqqf"]
 
 [ext_resource type="PackedScene" uid="uid://bwxvlnk1wrhlk" path="res://scenes/player.tscn" id="1_kmxkk"]
 [ext_resource type="PackedScene" uid="uid://bn4wg3mhr1e4w" path="res://scenes/node_2d.tscn" id="2_8uhim"]
+[ext_resource type="PackedScene" uid="uid://7rgp5iu45ig7" path="res://scenes/outside.tscn" id="3_bnibv"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_f043a"]
+distance = 10.0
 
 [node name="game" type="Node2D"]
 
 [node name="player" parent="." instance=ExtResource("1_kmxkk")]
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(1, -31)
-zoom = Vector2(3.095, 3.095)
-
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(0, 31)
-shape = SubResource("WorldBoundaryShape2D_f043a")
+[node name="Camera2D" type="Camera2D" parent="player"]
+position = Vector2(0, -32)
+zoom = Vector2(2.72, 2.72)
+position_smoothing_enabled = true
 
 [node name="Node2D" parent="." instance=ExtResource("2_8uhim")]
 z_index = -1
-position = Vector2(-233, -139)
+position = Vector2(-226, -155)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Node2D"]
+position = Vector2(226, 155)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/StaticBody2D"]
+position = Vector2(0, 32)
+shape = SubResource("WorldBoundaryShape2D_f043a")
+
+[node name="Node2D2" parent="." instance=ExtResource("3_bnibv")]
+z_index = -1
+position = Vector2(-670, -155)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Node2D2"]
+position = Vector2(217, 156)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D2/StaticBody2D"]
+position = Vector2(0, 60)
+shape = SubResource("WorldBoundaryShape2D_f043a")
