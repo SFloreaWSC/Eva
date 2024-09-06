@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bn4wg3mhr1e4w"]
+
+[ext_resource type="Texture2D" uid="uid://b1oagw5sqsxnt" path="res://assets/ETC.png" id="1_flesw"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(222, 125)
+texture = ExtResource("1_flesw")
+metadata/_edit_group_ = true
