@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://d33yini5f7tpx"]
+[gd_scene load_steps=5 format=3 uid="uid://d33yini5f7tpx"]
 
 [ext_resource type="Script" path="res://Menu.gd" id="1_jujqv"]
 [ext_resource type="Texture2D" uid="uid://dcc5cxsul5xxj" path="res://assets/cover2.jpg" id="2_jnru1"]
 [ext_resource type="FontFile" uid="uid://qo0nwcufw44w" path="res://assets/wedding-text-bt.ttf" id="3_gfv0y"]
+[ext_resource type="Theme" uid="uid://ddagnhrf77ucq" path="res://new_theme.tres" id="4_748xf"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -38,11 +39,11 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.109804, 0, 0, 0.627451)
+theme_override_colors/font_color = Color(0.0862745, 0, 0, 0.913725)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = ExtResource("3_gfv0y")
-theme_override_font_sizes/font_size = 190
+theme_override_font_sizes/font_size = 300
 text = "Eternitate"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -58,12 +59,13 @@ alignment = 1
 
 [node name="Control2" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 clip_contents = true
-custom_minimum_size = Vector2(0, 150)
+custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
 
 [node name="play" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(400, 0)
 layout_mode = 2
+theme = ExtResource("4_748xf")
 theme_override_fonts/font = ExtResource("3_gfv0y")
 theme_override_font_sizes/font_size = 70
 text = "Play"
@@ -74,6 +76,7 @@ layout_mode = 2
 [node name="exit" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(400, 0)
 layout_mode = 2
+theme = ExtResource("4_748xf")
 theme_override_fonts/font = ExtResource("3_gfv0y")
 theme_override_font_sizes/font_size = 70
 text = "Exit
